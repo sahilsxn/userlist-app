@@ -1,0 +1,17 @@
+.user_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:16px;
+    background: #FFFFFF;
+    border: 2px solid #18191F;
+    box-sizing: border-box;
+    border-radius: 16px;
+    }
+
+    .tap{
+        width: 40%;
+        margin: auto;  
+        box-sizing: border-box;
+        
+    }
