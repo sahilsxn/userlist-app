@@ -30,7 +30,6 @@ export const asyncGetUser = (id) => {
         axios.get(`https://reqres.in/api/users/${id}`)
         .then((response)=>{
             const result = response.data
-            console.log(result)
             if(result.hasOwnProperty('errors')){
                 alert(result.message)
             } else {

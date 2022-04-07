@@ -7,7 +7,7 @@ import {Provider} from 'react-redux'
 const store = configureStore()
 
 store.subscribe(()=>{
-  console.log('state:', store.getState())
+  // console.log('state:', store.getState())
 })
 
 const container = document.getElementById('root')

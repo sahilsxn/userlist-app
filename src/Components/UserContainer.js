@@ -20,12 +20,12 @@ const user = useSelector(state=>state.user)
 
   return (
     <div>
-    {loader && <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_3pb9gbyk.json" background="transparent"  speed="1"  style={{width: "300px", height: "300px"}} loop autoplay></lottie-player>}
+    {loader ? <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_3pb9gbyk.json" background="transparent"  speed="1"  style={{width: "300px", height: "300px", margin:'auto'}} loop autoplay></lottie-player>:
     <div className='user_container'>
         <UserList/>
         {Object.keys(user).length>0 ? <UserDetails/> : 
         <h2 className='tap'>Tap Show Details for details</h2>}
-    </div>
+    </div>}
     </div>
   )
 }
