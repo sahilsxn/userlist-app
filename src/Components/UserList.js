@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react'
+import {React} from 'react'
 import UserItem from './UserItem'
 import { useSelector } from 'react-redux'
 import '../CSS/userList.css'
